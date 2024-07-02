@@ -12,7 +12,7 @@ let userEmail;
 const id = Symbol('123')
 const anotherId = Symbol('123')
 
-console.log(id === anotherId);
+// console.log(id === anotherId);
 
 const bigNumber = 123456789123456789n
 
@@ -33,4 +33,28 @@ const myFunction = function(){
     console.log("Hello World")
 }
 
-console.log(typeof myObj);
+// console.log(typeof myObj);
+
+
+
+/************************************************************/
+
+// Stack (primitive) and Heap (non primitive)
+
+let myYoutubeName = "abcd"
+let anotherName = myYoutubeName
+anotherName = "efgh"
+console.log(myYoutubeName);
+console.log(anotherName);
+
+let userOne = {
+    email:"user@email.com",
+    upi:"user@test"
+}
+
+let userTwo = userOne
+
+userTwo.email = "user2@email.com"
+
+console.log(userOne.email);
+console.log(userTwo.email);
